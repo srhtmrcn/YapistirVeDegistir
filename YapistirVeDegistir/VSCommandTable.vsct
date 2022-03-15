@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CommandTable xmlns="http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <Extern href="stdidcmd.h"/>
+  <Extern href="vsshlids.h"/>
+  <Include href="KnownImageIds.vsct"/>
+  <Include href="VSGlobals.vsct"/>
+
+  <Commands package="YapistirVeDegistir">
+    <Groups>
+      <Group guid="YapistirVeDegistir" id="MyMenuGroup" priority="0x0600">
+	    <Parent guid="VSMainMenu" id="Edit"/>
+      </Group>
+    </Groups>
+
+    <!--This section defines the elements the user can interact with, like a menu command or a button
+        or combo box in a toolbar. -->
+    <Buttons>
+      <Button guid="YapistirVeDegistir" id="MyCommand" priority="0x0100" type="Button">
+        <Parent guid="YapistirVeDegistir" id="MyMenuGroup" />
+        <Icon guid="ImageCatalogGuid" id="PasteReplace" />
+        <CommandFlag>IconIsMoniker</CommandFlag>
+        <Strings>
+          <ButtonText>Yapıştır ve değiştir</ButtonText>
+          <LocCanonicalName>.Edit.MyCommand</LocCanonicalName>
+        </Strings>
+      </Button>
+    </Buttons>
+  </Commands>
+	<KeyBindings>
+		<KeyBinding guid="YapistirVeDegistir" id="MyCommand" editor="guidVSStd97" mod1="CONTROL ALT"  key1="V" mod2="CONTROL ALT"  key2="V"></KeyBinding>
+	</KeyBindings>
+  <Symbols>
+    <GuidSymbol name="YapistirVeDegistir" value="{3cb46d96-d881-42ce-90f8-554a619a982f}">
+      <IDSymbol name="MyMenuGroup" value="0x0001" />
+      <IDSymbol name="MyCommand" value="0x0100" />
+      <IDSymbol name="MyShortCut" value="0x0101" />
+    </GuidSymbol>
+  </Symbols>
+</CommandTable>
