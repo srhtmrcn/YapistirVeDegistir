@@ -60,7 +60,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="overview.Designer.md" />
     <None Include="overview.md">
       <SubType>Component</SubType>
     </None>
