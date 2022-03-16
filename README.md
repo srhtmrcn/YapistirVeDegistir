@@ -1,5 +1,5 @@
 # YapistirVeDegistir
-YapistirVeDegistir is an "VS Extension" for 2019 and above.
+YapistirVeDegistir is an "Extension" for VS 2019.
 
 YapistirVeDegistir That's mean Paste And Replace!
 
